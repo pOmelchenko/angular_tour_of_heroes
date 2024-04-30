@@ -3,6 +3,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HEROES} from "../mock-heroes";
 import {Hero} from "../hero";
+import {HeroDetailComponent} from "../hero-detail/hero-detail.component";
 
 @Component({
   selector: 'app-heroes',
@@ -10,6 +11,7 @@ import {Hero} from "../hero";
   imports: [
     CommonModule,
     FormsModule,
+    HeroDetailComponent,
   ],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css'
