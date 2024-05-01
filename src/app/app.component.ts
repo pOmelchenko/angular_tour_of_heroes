@@ -4,6 +4,10 @@ import {HeroesComponent} from "./heroes/heroes.component";
 import {MessagesComponent} from "./messages/messages.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {HeroDetailComponent} from "./hero-detail/hero-detail.component";
+import {HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
+import {InMemoryDataService} from "./in-memory-data.service";
+
+
 
 @Component({
   selector: 'app-root',
@@ -19,6 +23,7 @@ import {HeroDetailComponent} from "./hero-detail/hero-detail.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'Tour of Heroes';
 }
